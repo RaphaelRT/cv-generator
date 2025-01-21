@@ -1,0 +1,63 @@
+{
+  "isDev": true,
+  "name": "John Doe",
+  "title": "Full Stack Developer",
+  "contact": {
+    "phone": "+33 6 12 34 56 78",
+    "email": "johndoe@example.com",
+    "portfolio": "http://www.johndoe.dev",
+    "github": "john-doe",
+    "linkedin": "john-doe"
+  },
+  "skills": {
+    "Full Stack Development": [
+      "React",
+      "Node.js",
+      "PHP",
+      "Django"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Developer",
+      "company": "TechCorp",
+      "type": "Full-Time",
+      "location": "Paris",
+      "startDate": "2023",
+      "endDate": "2024",
+      "description": [
+        "Migrated a monolithic MeteorJS architecture to ReactJS and microservices with Node.js.",
+        "Designed and deployed an inventory management system meeting BIO standards, reducing errors by 35%.",
+        "Implemented technical and business monitoring systems to preempt critical issues."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master's in Big Data and Artificial Intelligence",
+      "institution": "Tech University",
+      "startDate": "2020",
+      "endDate": "2022"
+    },
+    {
+      "degree": "Bachelor's in Engineering",
+      "institution": "Tech University",
+      "startDate": "2018",
+      "endDate": "2020"
+    }
+  ],
+  "languages": [
+    {
+      "language": "French",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Professional"
+    },
+    {
+      "language": "Spanish",
+      "level": "Intermediate"
+    }
+  ]
+}

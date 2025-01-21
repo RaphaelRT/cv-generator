@@ -1,0 +1,14 @@
+node_modules
+package-lock.json
+.DS_Store
+generated_*
+data/index.json
+src/assets/data/index.json
+src/assets/fonts/*
+src/assets/styles/index.scss
+src/assets/styles/main.css*
+src/templates/index.hbs
+src/generated_*
+src/highlightedKeywords*
+
+
