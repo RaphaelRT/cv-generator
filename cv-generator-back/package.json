@@ -1,0 +1,33 @@
+{
+  "name": "cv-generator-back",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "build": "tsc && sass src/assets/styles/index.scss:src/assets/styles/main.css && ts-node copy.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/express-fileupload": "^1.5.1",
+    "@types/formidable": "^3.4.5",
+    "@types/html-pdf": "^3.0.3",
+    "@types/node": "^22.10.10",
+    "@types/pg": "^8.11.11",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-fileupload": "^1.5.1",
+    "formidable": "^3.5.2",
+    "handlebars": "^4.7.8",
+    "html-pdf": "^3.0.1",
+    "openai": "^4.82.0",
+    "pg": "^8.13.1",
+    "puppeteer": "^24.1.1",
+    "sass": "^1.83.4"
+  }
+}

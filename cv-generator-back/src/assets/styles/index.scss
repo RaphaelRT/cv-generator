@@ -1,0 +1,206 @@
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('/../fonts/Helvetica.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica-Bold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: bold;
+}
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/helvetica-light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Redaction 35';
+    src: url('../fonts/Redaction_35-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Redaction 35';
+    src: url('../fonts/Redaction_35-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Redaction 20';
+    src: url('../fonts/Redaction_20-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Redaction 50';
+    src: url('../fonts/Redaction_50-Regular.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+$font-current: lighter 10pt 'Helvetica', Arial, sans-serif;
+$font-current-bold: bolder 11pt 'Redaction 35', Georgia, serif;
+$font-italic: 11pt 'Redaction 35', Georgia, serif;
+
+$font-main-title: 25pt 'Redaction 20', Helvetica, sans-serif;
+$font-main-subtitle: bold 15pt 'Helvetica', Arial, sans-serif;
+
+$font-h3: bolder 11pt 'Helvetica', Arial, sans-serif;
+
+$font-block-title: bolder 10pt 'Helvetica', Arial, sans-serif;
+$font-block-subtitle: 300 10pt 'Helvetica', Arial, sans-serif;
+
+$space-btw-section: 10pt;
+$space-btw-h3: 11pt 0 2pt 0;
+$space-btw-line-block: 1pt 0pt 0 0;
+$space-left: 15pt;
+$space-btw-experience: 3pt 0 0 $space-left;
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    b {
+        font: $font-current-bold;
+        font-style: italic;
+    }
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    color: #000;
+    font: $font-current;
+    * {
+        box-sizing: border-box;
+    }
+    .page {
+        width: 210mm;
+        min-height: 297mm;
+        padding: 5mm 10mm 5mm 10mm;
+        margin: 0mm auto;
+        border: 1px #D3D3D3 solid;
+        border-radius: 5px;
+        background: white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        &_row {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin-bottom: -5pt;;
+            justify-content: space-between;
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+            &_title {
+                h1, h2 {
+                    margin: 0;
+                }
+                h1 {
+                    font: $font-main-title;
+                }
+                h2 {
+                    font: $font-main-subtitle
+                }
+            }
+            &_contacts {
+                font-size: 10pt;
+                p {
+                    margin: $space-btw-line-block;
+                }
+            }
+        }
+        &_section {
+            margin-bottom: $space-btw-section;
+            h3 {
+                font: $font-h3;
+                margin: $space-btw-h3; 
+                text-transform: uppercase;
+            }
+            &_skills {
+                margin: $space-btw-line-block;
+                margin-left: $space-left;
+                line-height: 12pt;
+                font-size: 10pt;
+                strong {
+                    font: $font-block-subtitle;
+                }
+
+            }
+            &_experience {
+                margin: $space-btw-experience;
+                header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    margin-bottom: -5pt;
+                    h2 {
+                        margin: 0;
+                        font: $font-block-title;
+                    }
+                    p {
+                        margin: 0;
+                        font: $font-block-subtitle;
+                    }
+                    time {
+                        font-size: 10pt;
+                    }
+                }
+                section {
+                    ul {
+                        list-style: none;
+                        padding-left: 0;
+                        padding-top: 0;
+                        margin-top: 6pt;
+                    }
+                    ul li {
+                        position: relative;
+                        padding-left: 13pt;
+                    }
+                    ul li::before {
+                        content: "–";
+                        position: absolute;
+                        left: 0;
+                        color: #000;
+                        font-weight: bold;
+                    }
+                    li {
+                        font-size: 10pt;
+                        margin: $space-btw-line-block;
+                    }
+                }
+            }
+            &_education, &_language {
+                margin-left: $space-left;
+                strong {
+                    font: $font-block-subtitle;
+                }
+                p {
+                    margin: $space-btw-line-block;
+                }
+            }
+            &_education {
+                display: flex;
+                flex-direction: column;
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+            }
+            &_language {
+                p {
+                    padding: 0;
+                }
+            }
+        }
+
+    }
+    
+}
